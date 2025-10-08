@@ -1,4 +1,7 @@
 pluginManagement {
+    plugins {
+        id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin") version "2.0.1" apply false
+    }
     repositories {
         google {
             content {
@@ -11,6 +14,7 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -21,4 +25,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "LABWEEK07"
 include(":app")
- 
